@@ -4475,11 +4475,11 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a926f9ca-0caa-4388-9342-53ec9e2d1311",
+								"id": "1f1de986-5e5d-4005-b65c-bdb51b78bd98",
 								"type": "text/javascript",
 								"exec": [
 									"pm.test(\"Bad request\", function () {",
-									"    pm.response.to.have.status(404);",
+									"    pm.response.to.have.status(400);",
 									"});",
 									"",
 									"pm.test(\"Check server error response\", function () {",
@@ -7115,11 +7115,10 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "76684081-639d-4dea-a9a4-a8971db2418b",
+								"id": "021b37bb-b0f8-42b5-8c88-214f6ec91ab9",
 								"type": "text/javascript",
 								"exec": [
-									"var rsp = pm.response.json();",
-									"    pm.environment.set(\"stationid\", rsp.ID);pm.test(\"Successful request\", function () {",
+									"pm.test(\"Successful request\", function () {",
 									"    pm.response.to.have.status(200);",
 									"});",
 									"",
@@ -7247,7 +7246,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "0233867b-b45f-47a8-aecf-e8342da8566c",
+								"id": "1d65832c-0f76-4912-a9cf-5271ace6be3b",
 								"type": "text/javascript",
 								"exec": [
 									"pm.test(\"Successful request\", function () {",
@@ -7256,6 +7255,7 @@
 									"",
 									"pm.test(\"Valid data for station\", function () {",
 									"    var rsp = pm.response.json();",
+									"    ",
 									"    pm.expect(rsp.id).to.eql(pm.variables.get(\"stationid\"));",
 									"    pm.expect(rsp.external_id).to.eql(pm.variables.get(\"extid\"));",
 									"    pm.expect(rsp.name).to.eql(pm.variables.get(\"stationname\"));",
