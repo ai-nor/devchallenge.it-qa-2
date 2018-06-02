@@ -182,10 +182,10 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d0834018-4f2d-43ba-9e21-412add41497f",
+								"id": "be05ff6e-80f1-413f-9f00-f6b679989c0a",
 								"type": "text/javascript",
 								"exec": [
-									"pm.test(\"Response about blocking\", function () {",
+									"pm.test(\"Response blocking\", function () {",
 									"    pm.response.to.have.status(429);",
 									"});",
 									"",
@@ -2698,10 +2698,10 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d0834018-4f2d-43ba-9e21-412add41497f",
+								"id": "bc1b317b-1f37-4fe8-9ee0-a8e838635461",
 								"type": "text/javascript",
 								"exec": [
-									"pm.test(\"Response about blocking\", function () {",
+									"pm.test(\"Response blocking\", function () {",
 									"    pm.response.to.have.status(429);",
 									"});",
 									"",
