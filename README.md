@@ -16,4 +16,4 @@
 16. For launch single folder with tests for any API area you may open a collection's submenu via ">" button in the right of folder (http://prntscr.com/jpx1y3) -> Select folder you want run (http://prntscr.com/jpx2c4) -> click "Run" button in the submenu under the folder -> Click "Run {selected folder}" in the opened window of the Collection Runner (http://prntscr.com/jpx304) -> Wait for results
 17. For launch all collection tests you may open a submenu via ">" button in the right of folder (http://prntscr.com/jpx1y3) -> click "Run" button in the submenu (http://prntscr.com/jpx3zf) -> Click "Run OpenWeatherMap" button in the opened window of the Collection Runner (http://prntscr.com/jpx4hb) -> Wait for results
 18. Or you can use Collection Runner to launch selected folders or tests via button "Runner" on the Postman top menu (http://prntscr.com/jpx4s9)
-19. For successful launch of load tests you should run the folder via Collection Runner or via "Run" button for folder (p.16)
+19. For successful launch of load tests you should run the folder **"2_Limit requests"** via Collection Runner or via "Run" button for folder (p.16)
